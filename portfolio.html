@@ -1,48 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML-Only Resume</title>
 </head>
 <body>
 
-    <h1>Anivesh Gupta</h1>
-    <p>B.Tech CSE Student</p>
+    <header>
+        <h1>Portfolio</h1>
+        <p>Web Development Enthusiast | HTML Specialist</p>
+        <p>
+            <a href="mailto:aniveshgupta11@gmail.com">aniveshgupta11@gmail.com</a> | 
+            <a href="https://github.com/AniveshGupta" target="_blank" rel="noopener">My GitHub</a>
+        </p>
+    </header>
 
     <hr>
 
-    <h2>About Me</h2>
-    <p>
-        Hello! I am Anivesh Gupta, a B.Tech Computer Science student.
-        I am interested in Programming, Web Development and many technology.
-    </p>
+    <section>
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate beginner web developer. Right now, I am focusing purely on HTML to understand how web pages are structured under the hood. I enjoy creating accessible, well-organized documents.</p>
+    </section>
 
-    <h2>Education</h2>
-    <ul>
-        <li>B.Tech in Computer Science and Engineering</li>
-        <li>Babu Banarasi Das University (BBDU)</li>
-    </ul>
+    <section>
+        <h2>Top 3 Hobbies</h2>
+        <ol>
+            <li>Coding web pages</li>
+            <li>Playing Badminton</li>
+            <li>Hiking in the mountains</li>
+        </ol>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Python</li>
-    </ul>
+    <section>
+        <h2>Technical Skills</h2>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Skill Category</th>
+                    <th>Specific Technologies</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Markup Languages</td>
+                    <td>HTML5</td>
+                </tr>
+                <tr>
+                    <td>Development Tools</td>
+                    <td>VS Code, Git, Chrome DevTools</td>
+                </tr>
+                <tr>
+                    <td>Operating Systems</td>
+                    <td>Windows, Linux</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <h2>Hobbies</h2>
-    <ul>
-        <li>Playing Badminton</li>
-        <li>Gaming (Valorant, GTA 5, BGMI)</li>
-        <li>Watching Tech Videos</li>
-    </ul>
+    <br>
+    <hr>
 
-    <h2>Contact Me</h2>
-    <p>Email: anivesh@example.com</p>
-    <p>Phone: +91 6387562654</p>
-    <p>linkedin : <a href="https://www.linkedin.com/in/anivesh-gupta-123456789/">Anivesh Gupta</a></p>
+    <section>
+        <h2>Leave a Message</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Contact Information</legend>
+                
+                <label for="firstName">First Name:</label><br>
+                <input type="text" id="firstName" name="firstName" required><br><br>
 
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" id="lastName" name="lastName" required><br><br>
+
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="reason">Reason for contacting:</label><br>
+                <select id="reason" name="reason">
+                    <option value="job">Job Opportunity</option>
+                    <option value="networking">Networking</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label for="message">Your Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+                <button type="submit">Send Message</button>
+                <button type="reset">Clear Form</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <br>
 
 </body>
 </html>
